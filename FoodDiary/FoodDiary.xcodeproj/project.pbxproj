@@ -1,0 +1,625 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		82B54ABE29A5036C00D260FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B54ABD29A5036C00D260FD /* AppDelegate.swift */; };
+		82B54AC029A5036C00D260FD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B54ABF29A5036C00D260FD /* SceneDelegate.swift */; };
+		82B54AC229A5036C00D260FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B54AC129A5036C00D260FD /* ViewController.swift */; };
+		82B54AC529A5036C00D260FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82B54AC329A5036C00D260FD /* Main.storyboard */; };
+		82B54AC829A5036C00D260FD /* FoodDiary.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 82B54AC629A5036C00D260FD /* FoodDiary.xcdatamodeld */; };
+		82B54ACA29A5036E00D260FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82B54AC929A5036E00D260FD /* Assets.xcassets */; };
+		82B54ACD29A5036E00D260FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82B54ACB29A5036E00D260FD /* LaunchScreen.storyboard */; };
+		82B54ADD29A5049E00D260FD /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 82B54ADC29A5049E00D260FD /* RxCocoa */; };
+		82B54ADF29A5049E00D260FD /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 82B54ADE29A5049E00D260FD /* RxSwift */; };
+		82B54AE229A504CF00D260FD /* RxFlow in Frameworks */ = {isa = PBXBuildFile; productRef = 82B54AE129A504CF00D260FD /* RxFlow */; };
+		82B54AE529A5050B00D260FD /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 82B54AE429A5050B00D260FD /* Alamofire */; };
+		82B54AE829A505B000D260FD /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 82B54AE729A505B000D260FD /* Moya */; };
+		82B54AEA29A505B000D260FD /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 82B54AE929A505B000D260FD /* RxMoya */; };
+		82B54AED29A505E400D260FD /* ReactorKit in Frameworks */ = {isa = PBXBuildFile; productRef = 82B54AEC29A505E400D260FD /* ReactorKit */; };
+		82B54AF329A5069800D260FD /* SwiftRichString in Frameworks */ = {isa = PBXBuildFile; productRef = 82B54AF229A5069800D260FD /* SwiftRichString */; };
+		82B54AF629A506E100D260FD /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 82B54AF529A506E100D260FD /* SnapKit */; };
+		82B54AF929A5070A00D260FD /* RxNuke in Frameworks */ = {isa = PBXBuildFile; productRef = 82B54AF829A5070A00D260FD /* RxNuke */; };
+		82B54AFC29A5073600D260FD /* RxGesture in Frameworks */ = {isa = PBXBuildFile; productRef = 82B54AFB29A5073600D260FD /* RxGesture */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		82B54ABA29A5036C00D260FD /* FoodDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		82B54ABD29A5036C00D260FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		82B54ABF29A5036C00D260FD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		82B54AC129A5036C00D260FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		82B54AC429A5036C00D260FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		82B54AC729A5036C00D260FD /* FoodDiary.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FoodDiary.xcdatamodel; sourceTree = "<group>"; };
+		82B54AC929A5036E00D260FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		82B54ACC29A5036E00D260FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		82B54ACE29A5036E00D260FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		82B54AB729A5036C00D260FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82B54AEA29A505B000D260FD /* RxMoya in Frameworks */,
+				82B54AE229A504CF00D260FD /* RxFlow in Frameworks */,
+				82B54AED29A505E400D260FD /* ReactorKit in Frameworks */,
+				82B54AE529A5050B00D260FD /* Alamofire in Frameworks */,
+				82B54ADF29A5049E00D260FD /* RxSwift in Frameworks */,
+				82B54AF929A5070A00D260FD /* RxNuke in Frameworks */,
+				82B54AE829A505B000D260FD /* Moya in Frameworks */,
+				82B54AF329A5069800D260FD /* SwiftRichString in Frameworks */,
+				82B54AFC29A5073600D260FD /* RxGesture in Frameworks */,
+				82B54ADD29A5049E00D260FD /* RxCocoa in Frameworks */,
+				82B54AF629A506E100D260FD /* SnapKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		82B54AB129A5036C00D260FD = {
+			isa = PBXGroup;
+			children = (
+				82B54ABC29A5036C00D260FD /* FoodDiary */,
+				82B54ABB29A5036C00D260FD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		82B54ABB29A5036C00D260FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				82B54ABA29A5036C00D260FD /* FoodDiary.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		82B54ABC29A5036C00D260FD /* FoodDiary */ = {
+			isa = PBXGroup;
+			children = (
+				82B54ADA29A5041000D260FD /* Sources */,
+				82B54AD929A5040000D260FD /* Resources */,
+			);
+			path = FoodDiary;
+			sourceTree = "<group>";
+		};
+		82B54AD429A503D200D260FD /* Submodule */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Submodule;
+			sourceTree = "<group>";
+		};
+		82B54AD529A503DE00D260FD /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				82B54AC129A5036C00D260FD /* ViewController.swift */,
+				82B54AC329A5036C00D260FD /* Main.storyboard */,
+				82B54ACB29A5036E00D260FD /* LaunchScreen.storyboard */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		82B54AD629A503EE00D260FD /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		82B54AD729A503F300D260FD /* Flow */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Flow;
+			sourceTree = "<group>";
+		};
+		82B54AD829A503F800D260FD /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		82B54AD929A5040000D260FD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				82B54AC929A5036E00D260FD /* Assets.xcassets */,
+				82B54ACE29A5036E00D260FD /* Info.plist */,
+				82B54AC629A5036C00D260FD /* FoodDiary.xcdatamodeld */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		82B54ADA29A5041000D260FD /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				82B54ABD29A5036C00D260FD /* AppDelegate.swift */,
+				82B54ABF29A5036C00D260FD /* SceneDelegate.swift */,
+				82B54AD829A503F800D260FD /* Network */,
+				82B54AD729A503F300D260FD /* Flow */,
+				82B54AD629A503EE00D260FD /* View */,
+				82B54AD529A503DE00D260FD /* Scene */,
+				82B54AD429A503D200D260FD /* Submodule */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		82B54AB929A5036C00D260FD /* FoodDiary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82B54AD129A5036E00D260FD /* Build configuration list for PBXNativeTarget "FoodDiary" */;
+			buildPhases = (
+				82B54AB629A5036C00D260FD /* Sources */,
+				82B54AB729A5036C00D260FD /* Frameworks */,
+				82B54AB829A5036C00D260FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FoodDiary;
+			packageProductDependencies = (
+				82B54ADC29A5049E00D260FD /* RxCocoa */,
+				82B54ADE29A5049E00D260FD /* RxSwift */,
+				82B54AE129A504CF00D260FD /* RxFlow */,
+				82B54AE429A5050B00D260FD /* Alamofire */,
+				82B54AE729A505B000D260FD /* Moya */,
+				82B54AE929A505B000D260FD /* RxMoya */,
+				82B54AEC29A505E400D260FD /* ReactorKit */,
+				82B54AF229A5069800D260FD /* SwiftRichString */,
+				82B54AF529A506E100D260FD /* SnapKit */,
+				82B54AF829A5070A00D260FD /* RxNuke */,
+				82B54AFB29A5073600D260FD /* RxGesture */,
+			);
+			productName = FoodDiary;
+			productReference = 82B54ABA29A5036C00D260FD /* FoodDiary.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		82B54AB229A5036C00D260FD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					82B54AB929A5036C00D260FD = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 82B54AB529A5036C00D260FD /* Build configuration list for PBXProject "FoodDiary" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 82B54AB129A5036C00D260FD;
+			packageReferences = (
+				82B54ADB29A5049E00D260FD /* XCRemoteSwiftPackageReference "RxSwift" */,
+				82B54AE029A504CF00D260FD /* XCRemoteSwiftPackageReference "RxFlow" */,
+				82B54AE329A5050B00D260FD /* XCRemoteSwiftPackageReference "Alamofire" */,
+				82B54AE629A505B000D260FD /* XCRemoteSwiftPackageReference "Moya" */,
+				82B54AEB29A505E400D260FD /* XCRemoteSwiftPackageReference "ReactorKit" */,
+				82B54AF129A5069800D260FD /* XCRemoteSwiftPackageReference "SwiftRichString" */,
+				82B54AF429A506E100D260FD /* XCRemoteSwiftPackageReference "SnapKit" */,
+				82B54AF729A5070A00D260FD /* XCRemoteSwiftPackageReference "RxNuke" */,
+				82B54AFA29A5073600D260FD /* XCRemoteSwiftPackageReference "RxGesture" */,
+			);
+			productRefGroup = 82B54ABB29A5036C00D260FD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				82B54AB929A5036C00D260FD /* FoodDiary */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		82B54AB829A5036C00D260FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82B54ACD29A5036E00D260FD /* LaunchScreen.storyboard in Resources */,
+				82B54ACA29A5036E00D260FD /* Assets.xcassets in Resources */,
+				82B54AC529A5036C00D260FD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		82B54AB629A5036C00D260FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82B54AC229A5036C00D260FD /* ViewController.swift in Sources */,
+				82B54ABE29A5036C00D260FD /* AppDelegate.swift in Sources */,
+				82B54AC029A5036C00D260FD /* SceneDelegate.swift in Sources */,
+				82B54AC829A5036C00D260FD /* FoodDiary.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		82B54AC329A5036C00D260FD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				82B54AC429A5036C00D260FD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		82B54ACB29A5036E00D260FD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				82B54ACC29A5036E00D260FD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		82B54ACF29A5036E00D260FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		82B54AD029A5036E00D260FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		82B54AD229A5036E00D260FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FoodDiary/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.FoodDiary;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		82B54AD329A5036E00D260FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FoodDiary/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.FoodDiary;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		82B54AB529A5036C00D260FD /* Build configuration list for PBXProject "FoodDiary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82B54ACF29A5036E00D260FD /* Debug */,
+				82B54AD029A5036E00D260FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		82B54AD129A5036E00D260FD /* Build configuration list for PBXNativeTarget "FoodDiary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82B54AD229A5036E00D260FD /* Debug */,
+				82B54AD329A5036E00D260FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		82B54ADB29A5049E00D260FD /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = exactVersion;
+				version = 6.5.0;
+			};
+		};
+		82B54AE029A504CF00D260FD /* XCRemoteSwiftPackageReference "RxFlow" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/RxFlow.git";
+			requirement = {
+				kind = exactVersion;
+				version = 2.13.0;
+			};
+		};
+		82B54AE329A5050B00D260FD /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = exactVersion;
+				version = 5.6.4;
+			};
+		};
+		82B54AE629A505B000D260FD /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				kind = exactVersion;
+				version = 15.0.3;
+			};
+		};
+		82B54AEB29A505E400D260FD /* XCRemoteSwiftPackageReference "ReactorKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactorKit/ReactorKit.git";
+			requirement = {
+				kind = exactVersion;
+				version = 3.2.0;
+			};
+		};
+		82B54AF129A5069800D260FD /* XCRemoteSwiftPackageReference "SwiftRichString" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/malcommac/SwiftRichString.git";
+			requirement = {
+				kind = exactVersion;
+				version = 3.7.2;
+			};
+		};
+		82B54AF429A506E100D260FD /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = exactVersion;
+				version = 5.6.0;
+			};
+		};
+		82B54AF729A5070A00D260FD /* XCRemoteSwiftPackageReference "RxNuke" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/RxNuke.git";
+			requirement = {
+				kind = exactVersion;
+				version = 4.0.0;
+			};
+		};
+		82B54AFA29A5073600D260FD /* XCRemoteSwiftPackageReference "RxGesture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/RxGesture.git";
+			requirement = {
+				kind = exactVersion;
+				version = 4.0.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		82B54ADC29A5049E00D260FD /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 82B54ADB29A5049E00D260FD /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		82B54ADE29A5049E00D260FD /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 82B54ADB29A5049E00D260FD /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		82B54AE129A504CF00D260FD /* RxFlow */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 82B54AE029A504CF00D260FD /* XCRemoteSwiftPackageReference "RxFlow" */;
+			productName = RxFlow;
+		};
+		82B54AE429A5050B00D260FD /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 82B54AE329A5050B00D260FD /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		82B54AE729A505B000D260FD /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 82B54AE629A505B000D260FD /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		82B54AE929A505B000D260FD /* RxMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 82B54AE629A505B000D260FD /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = RxMoya;
+		};
+		82B54AEC29A505E400D260FD /* ReactorKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 82B54AEB29A505E400D260FD /* XCRemoteSwiftPackageReference "ReactorKit" */;
+			productName = ReactorKit;
+		};
+		82B54AF229A5069800D260FD /* SwiftRichString */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 82B54AF129A5069800D260FD /* XCRemoteSwiftPackageReference "SwiftRichString" */;
+			productName = SwiftRichString;
+		};
+		82B54AF529A506E100D260FD /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 82B54AF429A506E100D260FD /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		82B54AF829A5070A00D260FD /* RxNuke */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 82B54AF729A5070A00D260FD /* XCRemoteSwiftPackageReference "RxNuke" */;
+			productName = RxNuke;
+		};
+		82B54AFB29A5073600D260FD /* RxGesture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 82B54AFA29A5073600D260FD /* XCRemoteSwiftPackageReference "RxGesture" */;
+			productName = RxGesture;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		82B54AC629A5036C00D260FD /* FoodDiary.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				82B54AC729A5036C00D260FD /* FoodDiary.xcdatamodel */,
+			);
+			currentVersion = 82B54AC729A5036C00D260FD /* FoodDiary.xcdatamodel */;
+			path = FoodDiary.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 82B54AB229A5036C00D260FD /* Project object */;
+}
