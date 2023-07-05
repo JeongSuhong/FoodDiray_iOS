@@ -27,8 +27,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 extension AppDelegate {
     private func setupFirebase() {
-        guard let path = Bundle.main.path(forResource: <#T##String?#>, ofType: <#T##String?#>)
-        FirebaseApp.configure()
+        guard let path = Bundle.main.path(forResource: Environment.firebaseResource, ofType: "plist"),
+              let option = FirebaseOptions(contentsOfFile: path) else { return }
+        
+        FirebaseApp.configure(options: option)
     }
 }
 
