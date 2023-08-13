@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nEA-LV-Ppx">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="VTW-8h-tuh">
+            <objects>
+                <viewController restorationIdentifier="LoginViewController" storyboardIdentifier="LoginViewController" id="nEA-LV-Ppx" customClass="LoginViewController" customModule="FoodDiary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eqC-OF-qz9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0oM-X8-2Ip">
+                                <rect key="frame" x="56.333333333333343" y="341.66666666666669" width="262.33333333333326" height="128.66666666666669"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="adu-h2-ClR">
+                                        <rect key="frame" x="0.0" y="0.0" width="262.33333333333331" height="28.666666666666668"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="5Gp-4P-TbK">
+                                        <rect key="frame" x="0.0" y="78.666666666666629" width="262.33333333333331" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FMV-rF-YcK">
+                                                <rect key="frame" x="0.0" y="0.0" width="262.33333333333331" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="bFz-1v-txU"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Google"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="adu-h2-ClR" secondAttribute="trailing" id="Avl-Dn-BKz"/>
+                                    <constraint firstAttribute="trailing" secondItem="5Gp-4P-TbK" secondAttribute="trailing" id="D9P-S7-7TC"/>
+                                    <constraint firstItem="adu-h2-ClR" firstAttribute="leading" secondItem="0oM-X8-2Ip" secondAttribute="leading" id="IJx-fT-6Md"/>
+                                    <constraint firstItem="adu-h2-ClR" firstAttribute="top" secondItem="0oM-X8-2Ip" secondAttribute="top" id="JPK-2M-rBT"/>
+                                    <constraint firstAttribute="bottom" secondItem="5Gp-4P-TbK" secondAttribute="bottom" id="LWd-RZ-2tH"/>
+                                    <constraint firstItem="5Gp-4P-TbK" firstAttribute="top" secondItem="adu-h2-ClR" secondAttribute="bottom" constant="50" id="ey7-u4-QTJ"/>
+                                    <constraint firstItem="5Gp-4P-TbK" firstAttribute="leading" secondItem="0oM-X8-2Ip" secondAttribute="leading" id="xgU-9Y-zTp"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zYe-d3-fSA"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0oM-X8-2Ip" firstAttribute="centerY" secondItem="eqC-OF-qz9" secondAttribute="centerY" id="9dp-ch-n5N"/>
+                            <constraint firstItem="0oM-X8-2Ip" firstAttribute="width" secondItem="eqC-OF-qz9" secondAttribute="width" multiplier="0.7" id="KME-Gr-ew4"/>
+                            <constraint firstItem="0oM-X8-2Ip" firstAttribute="centerX" secondItem="eqC-OF-qz9" secondAttribute="centerX" id="kCA-c4-JzO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="googleButton" destination="FMV-rF-YcK" id="V2m-RA-TRs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="95c-JH-TAU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-714.39999999999998" y="-46.551724137931039"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -2,11 +2,26 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>FirebaseAutomaticScreenReportingEnabled</key>
-	<true/>
+	<key>GIDClientID</key>
+	<string>$(GOOGLE_CLIENT_ID)</string>
+	<key>GOOGLE_SERVER_CLIENT_ID</key>
+	<string>$(GOOGLE_SERVER_CLIENT_ID)</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.173666407832-itmfj3utgrm2ulpg4lt1acsuqjh6cs60</string>
+			</array>
+		</dict>
+	</array>
+	<key>FIREBASE_RESOURCE</key>
+	<string>$(FIREBASE_RESOURCE)</string>
 	<key>FirebaseAppDelegateProxyEnabled</key>
 	<false/>
-	<key>FIREBASE_RESOURCE</key>
-	<string>GoogleService-Info</string>
+	<key>FirebaseAutomaticScreenReportingEnabled</key>
+	<true/>
 </dict>
 </plist>
